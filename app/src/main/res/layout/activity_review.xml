@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:backgroundTint="@color/red"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Review Information"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_weight="1"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Contact Info"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            >
+
+            <TextView
+                android:id="@+id/tvSName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pakeeza"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tvSCountry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pakistan"
+                android:textSize="14sp"
+                android:layout_weight="1"
+
+                />
+
+            <TextView
+                android:id="@+id/tvSAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ABC"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tvSInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0000 "
+                android:textSize="14sp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/compare_arrows"
+            android:rotation="90"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            >
+
+            <TextView
+                android:id="@+id/tvRName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Rana Waqas"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tvRCountry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pakistan"
+                android:textSize="14sp"
+                android:layout_weight="1"
+
+                />
+
+            <TextView
+                android:id="@+id/tvRAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ABC"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tvRInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0000 "
+                android:textSize="14sp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
