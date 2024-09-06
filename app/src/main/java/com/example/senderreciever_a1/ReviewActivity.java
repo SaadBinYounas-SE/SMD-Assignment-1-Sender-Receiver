@@ -2,6 +2,7 @@ package com.example.senderreciever_a1;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ReviewActivity extends AppCompatActivity {
 
     TextView tvSName,tvRName, tvSCountry,tvRCountry,tvSAddress,tvRAddress,tvSInfo,tvRInfo;
+    View fab;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +44,15 @@ public class ReviewActivity extends AppCompatActivity {
         tvSInfo.setText(info);
         tvSCountry.setText(country);
         tvSAddress.setText(address);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ReviewActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     void init()
@@ -55,5 +66,7 @@ public class ReviewActivity extends AppCompatActivity {
         tvSInfo = findViewById(R.id.tvSInfo);
         tvSCountry = findViewById(R.id.tvSCountry);
         tvSAddress = findViewById(R.id.tvSAddress);
+
+        fab=findViewById(R.id.fab);
     }
 }

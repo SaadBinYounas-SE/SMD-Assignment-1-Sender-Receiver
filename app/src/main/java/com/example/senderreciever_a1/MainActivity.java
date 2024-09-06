@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Toast.makeText(MainActivity.this, "Email invalid", Toast.LENGTH_SHORT).show();
                 }
+                else if(info.length()!=11){
+                    Toast.makeText(MainActivity.this, "Phone number invalid", Toast.LENGTH_SHORT).show();
+                }
                 else {
                     Intent intent = new Intent(MainActivity.this, RecieverActivity.class);
                     intent.putExtra("email", email);
@@ -44,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("country", country);
                     intent.putExtra("address", address);
                     startActivity(intent);
+                    finish();
                 }
             }
         });

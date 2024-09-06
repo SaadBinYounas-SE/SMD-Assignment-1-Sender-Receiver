@@ -46,6 +46,13 @@ public class RecieverActivity extends AppCompatActivity {
                 {
                     Toast.makeText(RecieverActivity.this, "Email invalid", Toast.LENGTH_SHORT).show();
                 }
+                else if(Rinfo.length()!=11){
+                    Toast.makeText(RecieverActivity.this, "Phone number invalid", Toast.LENGTH_SHORT).show();
+                }
+                else if(Remail.equals(email))
+                {
+                    Toast.makeText(RecieverActivity.this, "Use a different email id", Toast.LENGTH_SHORT).show();
+                }
                 else {
                     Intent intent = new Intent(RecieverActivity.this, ReviewActivity.class);
                     intent.putExtra("Remail", Remail);
